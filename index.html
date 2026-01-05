@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Mechanic | Creative Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body class="home">
+    <div id="container">
+
+<!-- ===== Sign Up Modal ===== -->
+<div class="modal" id="signupModal" aria-hidden="true">
+  <div class="modal-overlay" id="closeModal"></div>
+
+  <div class="modal-content"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="modalTitle">
+
+    <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+      &times;
+    </button>
+
+    <h2 id="modalTitle">Sign Up for Newsletter</h2>
+    <p class="mb-2">Join us by filling out the form below.</p>
+
+    <!-- FORM -->
+    <form class="signup-form" id="signupForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input class="mb-2" type="email" id="email" name="email" required>
+
+      <button type="submit" class="btn-primary rounded">
+        Submit
+      </button>
+    </form>
+
+    <!-- THANK YOU MESSAGE -->
+    <div class="thank-you-message" id="thankYouMessage" hidden>
+      <h2>Thank You! 🎉</h2>
+      <p>You’ve successfully signed up. We’ll be in touch soon.</p>
+    </div>
+
+  </div>
+</div>
+
+        <header role="banner">
+    <div class="logo">
+        <a href="index.html" aria-label="Web Mechanic Home">
+            <img src="images/logo.svg" alt="Web Mechanic Logo">
+        </a>
+    </div>
+    
+    <nav aria-label="Main Navigation" class="main-nav">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            &#9776;
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="nav-blog"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="btn-secondary rounded" id="openModal">Sign Up</button></li>
+        </ul>
+    </nav>
+</header>
+
+        <main id="main-content">
+            <section class="hero-section" aria-labelledby="hero-heading">
+                <div class="hero">
+                    <div>
+                        <h1 id="hero-heading">WE ARE A <br><span class="primary-color">CREATIVE AGENCY</span></h1>
+                        <h3>We Provide Creative Solutions for Your Business</h3>
+                    </div>
+                    <div>
+                        <img class="desktop" src="images/hero.svg" alt="Illustration of digital creative solutions">
+                    </div>
+                </div>
+                <a href="services.html"><button class="btn-primary mbl rounded">Learn More</button></a>
+            </section>
+
+            <section aria-labelledby="services-heading">
+                <h2 id="services-heading"><span class="primary-color ml mb-2 mr hline" aria-hidden="true">|</span>Our Service <span class="primary-color">Offerings</span></h2>
+                <div class="services mb-3 mt-2">
+                    <div class="card rounded-2 shadow">
+                        <img class="p-1" src="images/s1.svg" alt="" aria-hidden="true">
+                        <div class="bg-green"><h4>Web Design</h4></div>
+                        <p>Responsive, user-friendly websites built for speed, security, and scalability crafted to elevate your brand and drive results</p>
+                        <a href="services.html"><button class="btn-primary rounded mb-2 shadow" aria-label="View Web Design services">View Services</button></a>
+                    </div>
+
+                    <div class="card rounded-2 shadow">
+                        <img class="p-1" src="images/s2.svg" alt="" aria-hidden="true">
+                        <div class="bg-green"><h4>SEO</h4></div>
+                        <p>We optimize your site for search engines and users to boost rankings, increase traffic, and drive organic growth</p>
+                        <a href="services.html"><button class="btn-primary rounded mb-2 shadow" aria-label="View SEO services">View Services</button></a>
+                    </div>
+
+                    <div class="card rounded-2 shadow">
+                        <img class="p-1" src="images/s3.svg" alt="" aria-hidden="true">
+                        <div class="bg-green"><h4>UI/UX Design</h4></div>
+                        <p>We create intuitive, user-first experiences that engage users and drive conversions through research and testing</p>
+                        <a href="services.html"><button class="btn-primary rounded mb-2 shadow" aria-label="View UI/UX services">View Services</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio mb-3" aria-labelledby="portfolio-heading">
+                <h2 id="portfolio-heading"><span class="primary-color ml mr hline" aria-hidden="true">|</span>Showcasing <span class="primary-color"> Our Work</span></h2>
+                <p class="ml-2">Some of our recent project for website and mobile application design and developlemt</p>
+                <div class="grid mt-2" role="img" aria-label="Gallery of recent work projects">
+                    <div class="box left top"><img src="images/3.jpg" alt="Project 3 screenshot"></div>
+                    <div class="box left bottom"><img src="images/1.jpg" alt="Project 1 screenshot"></div>
+                    <div class="box middle one"><img src="images/4.jpg" alt="Project 4 screenshot"></div>
+                    <div class="box middle two"><img src="images/2.jpg" alt="Project 2 screenshot"></div>
+                    <div class="box middle three"><img src="images/5.jpg" alt="Project 5 screenshot"></div>
+                    <div class="box right"><img src="images/6.jpg" alt="Project 6 screenshot"></div>
+                </div>
+            </section>
+
+            <section aria-labelledby="testimonials-heading">
+                <h2 id="testimonials-heading"><span class="primary-color ml mr hline" aria-hidden="true">|</span>Our Clients <span class="primary-color">Love Us</span></h2>
+                <div class="testimonial-slider mb-3" role="region" aria-roledescription="carousel" aria-label="Client testimonials">
+                    <div class="slider-wrapper" aria-live="polite">
+                        <figure class="testimonial-slide">
+                            <blockquote class="testimonial-content">
+                                <div>
+                                    <p>“Working with this team has been a game-changer for our business. Their creative insights, attention to detail, and seamless communication made the entire process effortless.”</p>
+                                    <figcaption class="primary-color mt-2">
+                                        <b>Bryan Adam</b><br>
+                                        <span class="secondary-color">CEO at FlightMate</span>
+                                    </figcaption>
+                                </div>
+                                <div class="testimonial-img">
+                                    <img src="images/testi1.png" alt="Bryan Adam">
+                                </div>
+                            </blockquote>
+                        </figure>
+
+						<figure class="testimonial-slide">
+                            <blockquote class="testimonial-content">
+                                <div>
+                                    <p>“From concept to launch, the team exceeded our expectations. Their strategic approach, clean design, and technical expertise helped us build a strong and professional online presence.”</p>
+                                    <figcaption class="primary-color mt-2">
+                                        <b>Sophia Martinez</b><br>
+                                        <span class="secondary-color">Marketing Director, NovaTech</span>
+                                    </figcaption>
+                                </div>
+                                <div class="testimonial-img">
+                                    <img src="images/testi2.png" alt="Bryan Adam">
+                                </div>
+                            </blockquote>
+                        </figure>
+
+
+						<figure class="testimonial-slide">
+                            <blockquote class="testimonial-content">
+                                <div>
+                                    <p>“The results speak for themselves. Our traffic, engagement, and conversions improved significantly. Their professionalism, responsiveness, and creative mindset made them a pleasure to work with.”</p>
+                                    <figcaption class="primary-color mt-2">
+                                        <b>Daniel Wright</b><br>
+                                        <span class="secondary-color">Founder, BrightLabs</span>
+                                    </figcaption>
+                                </div>
+                                <div class="testimonial-img">
+                                    <img class="testi-img" src="images/testi3.png" alt="Bryan Adam">
+                                </div>
+                            </blockquote>
+                        </figure>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev" aria-label="Previous slide">‹</button>
+                        <button class="next" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+            </section>
+
+ <section aria-labelledby="blog-heading" class="mb-3 hide-on-tablet">
+    <h2 id="blog-heading">
+        <span class="primary-color ml mr hline" aria-hidden="true">|</span>Latest From<span class="primary-color"> Blog</span>
+    </h2>
+
+    <div class="blog mt-2">
+        
+        <article class="blog-content ml-3 mt-2">
+            <a href="blog1.html">
+                <img class="mb" src="images/website.jpg" alt="Strong Website Boosts Business">
+                <p><b>Strong Website Boosts Business</b></p>
+                <p>Discover why a well designed website is more than visuals</p>
+            </a>
+        </article>
+
+        <article class="blog-content ml-3 mt-2">
+            <a href="blog2.html">
+                <img class="mb" src="images/seo.jpg" alt="SEO Tips for New Website">
+                <p><b>SEO Tips for New Website</b></p>
+                <p>Discover why a well designed website is more than visuals</p>
+            </a>
+        </article>
+
+        <article class="blog-content ml-3 mt-2">
+            <a href="blog3.html">
+                <img class="mb" src="images/uiux.jpg" alt="Designing UX that Convert">
+                <p><b>Designing UX that Convert</b></p>
+                <p>Explore how thoughtful UX design can improve engagement, reduce</p>
+            </a>
+        </article>
+
+    </div> 
+		</section>
+
+        </main>
+
+        <footer role="contentinfo">
+            <img src="images/logo.svg" alt="Web Mechanic">
+            <p>&copy; WebMechaninc 2025. All Rights Reserved.</p>
+            <div class="social-icons">
+                <span>Follow Us On</span>
+                <a href="#" aria-label="Facebook"><img src="images/icon1.svg" alt=""></a>
+                <a href="#" aria-label="Twitter"><img src="images/icon2.svg" alt=""></a>
+                <a href="#" aria-label="LinkedIn"><img src="images/icon3.svg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+
+<!-- Scripts -->
+<script src="scripts/testimonial-slider.js" defer></script>
+<script src="scripts/modal.js" defer></script>
+<script src="scripts/mobile-menu.js" defer></script>
+
+</body>
+</html>

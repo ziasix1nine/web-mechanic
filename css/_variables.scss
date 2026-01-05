@@ -1,0 +1,22 @@
+// Colors
+$primary-green: #37AA4A;
+$primary-green-hover: #45a049;
+$primary-dark: #000435;
+$bg-light-blue: #E7EFFF;
+$white: #fff;
+$border-light: #ccc;
+
+// Shadows
+$shadow-standard: 0 10px 11px rgba(0, 0, 0, 0.12);
+$shadow-grid: 0 12px 24px rgba(0, 0, 0, 0.10);
+
+// Fonts
+$font-poppins: 'Poppins', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  'mobile': 659px,
+  'tablet': 1023px,
+  'desktop': 1024px
+);

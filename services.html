@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- This website is designed by MD Ziauddin -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web Mechanic | Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="other-page">
+
+  <div id="container">
+<!-- ===== Sign Up Modal ===== -->
+<div class="modal" id="signupModal" aria-hidden="true">
+  <div class="modal-overlay" id="closeModal"></div>
+
+  <div class="modal-content"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="modalTitle">
+
+    <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+      &times;
+    </button>
+
+    <h2 id="modalTitle">Sign Up for Newsletter</h2>
+    <p class="mb-2">Join us by filling out the form below.</p>
+
+    <!-- FORM -->
+    <form class="signup-form" id="signupForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input class="mb-2" type="email" id="email" name="email" required>
+
+      <button type="submit" class="btn-primary rounded">
+        Submit
+      </button>
+    </form>
+
+    <!-- THANK YOU MESSAGE -->
+    <div class="thank-you-message" id="thankYouMessage" hidden>
+      <h2>Thank You! 🎉</h2>
+      <p>You’ve successfully signed up. We’ll be in touch soon.</p>
+    </div>
+
+  </div>
+</div>
+    <!-- ===== Header ===== -->
+       <header role="banner">
+    <div class="logo">
+        <a href="index.html" aria-label="Web Mechanic Home">
+            <img src="images/logo.svg" alt="Web Mechanic Logo">
+        </a>
+    </div>
+    
+    <nav aria-label="Main Navigation" class="main-nav">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            &#9776;
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="nav-blog"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="btn-secondary rounded" id="openModal">Sign Up</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- ===== Main Content ===== -->
+    <main id="main-content">
+
+      <!-- ===== Services Section ===== -->
+      <section class="services-section" aria-labelledby="services-heading">
+
+        <header>
+          <h2 id="services-heading">
+            <span class="primary-color ml mb-2 mr hline" aria-hidden="true">|</span>
+            Our Service <span class="primary-color">Offerings</span>
+          </h2>
+        </header>
+
+        <div class="services mb-3 mt-2">
+
+          <!-- ===== Service Card: Web Design ===== -->
+          <div class="card rounded-2 shadow">
+            <img
+              class="p-1"
+              src="images/s1.svg"
+              alt="Illustration representing web design services"
+            >
+
+            <div class="bg-green">
+              <h4>Web Design</h4>
+            </div>
+
+            <p>
+              Responsive, user-friendly websites built for speed, security, and scalability,
+              crafted to elevate your brand and drive results.
+            </p>
+
+            <ul class="tick-list">
+              <li>Custom, responsive website designs</li>
+              <li>Fast, secure, and scalable solutions</li>
+              <li>SEO-friendly and mobile-optimized</li>
+              <li>Modern, visually appealing layouts</li>
+              <li>Clean and maintainable code</li>
+              <li>Cross-browser compatibility</li>
+              <li>Performance-optimized pages</li>
+              <li>Brand-focused visual design</li>
+            </ul>
+          </div>
+
+          <!-- ===== Service Card: SEO ===== -->
+          <div class="card rounded-2 shadow">
+            <img
+              class="p-1"
+              src="images/s2.svg"
+              alt="Illustration representing SEO services"
+            >
+
+            <div class="bg-green">
+              <h4>SEO</h4>
+            </div>
+
+            <p>
+              We optimize your site for search engines and users to boost rankings,
+              increase traffic, and drive organic growth.
+            </p>
+
+            <ul class="tick-list">
+              <li>Comprehensive keyword research</li>
+              <li>On-page and off-page optimization</li>
+              <li>Technical SEO and site performance</li>
+              <li>Regular performance tracking & reporting</li>
+              <li>Content optimization for search intent</li>
+              <li>Local SEO optimization</li>
+              <li>Competitor analysis</li>
+              <li>Link-building strategies</li>
+            </ul>
+          </div>
+
+          <!-- ===== Service Card: UI/UX Design ===== -->
+          <div class="card rounded-2 shadow">
+            <img
+              class="p-1"
+              src="images/s3.svg"
+              alt="Illustration representing UI and UX design services"
+            >
+
+            <div class="bg-green">
+              <h4>UI/UX Design</h4>
+            </div>
+
+            <p>
+              We design intuitive, user-first experiences that feel effortless to use.
+              Through research and usability testing, we create interfaces that engage
+            </p>
+
+            <ul class="tick-list">
+              <li>User-centric design approach</li>
+              <li>Wireframes and interactive prototypes</li>
+              <li>Usability testing and user feedback</li>
+              <li>Visually appealing and functional designs</li>
+              <li>Intuitive navigation structures</li>
+              <li>Consistent design systems</li>
+              <li>Accessibility-focused design</li>
+              <li>Data-driven design decisions</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer role="contentinfo">
+      <img src="images/logo.svg" alt="Web Mechanic logo">
+
+      <p>
+        &copy; 2025 WebMechanic. All Rights Reserved.
+      </p>
+
+      <div class="social-icons" aria-label="Social media links">
+        <span>Follow Us On</span>
+        <a href="#" aria-label="Facebook">
+          <img src="images/icon1.svg" alt="">
+        </a>
+        <a href="#" aria-label="Twitter">
+          <img src="images/icon2.svg" alt="">
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <img src="images/icon3.svg" alt="">
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+<!-- Scripts -->
+<script src="scripts/modal.js" defer></script>
+<script src="scripts/mobile-menu.js" defer></script>
+
+</body>
+</html>

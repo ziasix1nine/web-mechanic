@@ -1,0 +1,23 @@
+.home {
+  background: linear-gradient(
+    to bottom,
+    $bg-light-blue 0%,
+    $bg-light-blue 33%,
+    $white 33%,
+    $white 62%,
+    $bg-light-blue 62%,
+    $bg-light-blue 89%,
+    $white 89%,
+    $white 100%
+  );
+}
+
+.other-page {
+  background: $bg-light-blue;
+}
+
+#container {
+  width: 90%;
+  margin: auto;
+  padding: 0.2em;
+}

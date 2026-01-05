@@ -1,0 +1,18 @@
+.btn-primary {
+  color: $white;
+  background-color: $primary-green;
+  border: none;
+  padding: 12px 30px;
+  font-family: $font-poppins;
+  font-size: 15px;
+  @include btn-hover(#2ac243);
+}
+
+.btn-secondary {
+  color: $white;
+  background-color: $primary-dark;
+  border: none;
+  padding: 12px 30px;
+  font-family: $font-poppins;
+  font-size: 15px;
+}

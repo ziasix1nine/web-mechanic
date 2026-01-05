@@ -1,0 +1,25 @@
+// Flex Center
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Media query
+@mixin respond-to($device) {
+  @if map-has-key($breakpoints, $device) {
+    @media (max-width: map-get($breakpoints, $device)) {
+      @content;
+    }
+  }
+}
+
+// Button hover effect
+@mixin btn-hover($bg-color-hover) {
+  &:hover {
+    background-color: $bg-color-hover;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!-- This website is designed by MD Ziauddin -->
+<html lang="en">
+<head>
+	<!-- Google Fonts -->
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<title>Web Mechanic</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="other-page">
+
+	<div id="container">
+	<!-- use this header area for website name and logo -->
+	
+<!-- ===== Sign Up Modal ===== -->
+<div class="modal" id="signupModal" aria-hidden="true">
+  <div class="modal-overlay" id="closeModal"></div>
+
+  <div class="modal-content"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="modalTitle">
+
+    <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+      &times;
+    </button>
+
+    <h2 id="modalTitle">Sign Up for Newsletter</h2>
+    <p class="mb-2">Join us by filling out the form below.</p>
+
+    <!-- FORM -->
+    <form class="signup-form" id="signupForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input class="mb-2" type="email" id="email" name="email" required>
+
+      <button type="submit" class="btn-primary rounded">
+        Submit
+      </button>
+    </form>
+
+    <!-- THANK YOU MESSAGE -->
+    <div class="thank-you-message" id="thankYouMessage" hidden>
+      <h2>Thank You! 🎉</h2>
+      <p>You’ve successfully signed up. We’ll be in touch soon.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+	<!-- use this header area for website name and logo -->
+       <header role="banner">
+    <div class="logo">
+        <a href="index.html" aria-label="Web Mechanic Home">
+            <img src="images/logo.svg" alt="Web Mechanic Logo">
+        </a>
+    </div>
+    
+    <nav aria-label="Main Navigation" class="main-nav">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            &#9776;
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="nav-blog"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="btn-secondary rounded" id="openModal">Sign Up</button></li>
+        </ul>
+    </nav>
+</header>
+	<!-- use this main area for main content -->
+		<main>
+
+			<div>
+					
+					<div class="mb-3">
+					<h2><span class="primary-color ml mr hline">|</span>Contact Us <span class="primary-color"> Today</span></h2>
+
+					<div class="contactUs rounded shadow mt-2">
+							
+					<form id="contactForm">
+					<label for="contact-name">Name</label>
+					<input placeholder="Type Your Name Here..." type="text" name="name" id="contact-name" required>
+
+					<label for="phone">Phone</label>
+					<input placeholder="Type Your Phone Number..." type="number" name="number" id="name" required>
+
+					<label for="contact-email">Email</label>
+					<input placeholder="Type Your Email Here..." type="email" name="email" id="contact-email" required>
+
+					<label for="message">Message</label>
+					<textarea placeholder="Your Message..." name="message" id="message" rows="10" required></textarea>
+
+					<input class="rounded" type="submit" value="Submit">
+				</form>
+
+				<!-- THANK YOU MESSAGE -->
+				<div class="thank-you-message is-hidden" id="contactThankYou" role="status" aria-live="polite">
+					<h3>Thank You! ✅</h3>
+					<p>Your message has been sent successfully. We’ll get back to you soon.</p>
+				</div>
+
+					</div>
+					</div>
+
+			</div>
+
+			
+		</main>
+
+	<!-- use this footer area for footer content-->
+		<footer>
+			<img src="images/logo.svg">
+			&copy; WebMechaninc 2025. All Rights Reserved.
+
+
+
+			<div class="social-icons">
+				Follow Us On &nbsp;<span><img src="images/icon1.svg"></span> <span><img src="images/icon2.svg"></span> <span><img src="images/icon3.svg"></span>
+
+			</div>
+		</footer>
+	</div>
+
+	<script>
+  const contactForm = document.getElementById('contactForm');
+  const contactThankYou = document.getElementById('contactThankYou');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    contactForm.classList.add('is-hidden');
+    contactThankYou.classList.remove('is-hidden');
+  });
+</script>
+</body>
+</html>
